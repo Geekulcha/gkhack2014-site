@@ -5,8 +5,9 @@ var app = angular.module('comingsoonApp', [
     'ngResource',
     'ngSanitize',
     'ngRoute',
-
-]);
+    'firebase'
+])
+.constant('FIREBASE_URL', 'https://blinding-fire-5281.firebaseio.com/');
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider

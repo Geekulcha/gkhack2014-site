@@ -62,14 +62,24 @@
             <h2><strong>Subscribe</strong> Now</h2>
             <p>Subscribe now and get notified as soon as the GK14Hack registration process is open!</p>
             <!-- Input Group -->
-            <div class="input-group">
-                            <form role="form">
-                              <input type="text" class="form-control input-lg" placeholder="Name">
-              <input type="text" class="form-control input-lg" placeholder="Email">
-              <span class="input-group-btn">
-                <button type="button" class="btn btn-lg">Subscribe</button>
-              </span>
-                              </form>
+            <div class="input-group" ng-controller="SignupCtrl">
+              <form role="form" ng-submit="subscribe()" novalidate>
+                <input type="text" class="form-control input-lg" placeholder="Name" ng-model="subscriber.name">
+                <input type="text" class="form-control input-lg" placeholder="Email" ng-model="subscriber.email">
+                <span class="input-group-btn">
+                  <input type="submit" value="Subscribe" class="btn btn-lg" />
+                  <!-- <button type="button" class="btn btn-lg">Subscribe</button> -->
+                </span>
+              </form>
+
+              <div ng-show="error" class="alert alert-danger alert-dismissable" style="margin-top:20px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Oups something went wrong!</strong> <br> {{ error }}
+              </div>
+              <div ng-show="success" class="alert alert-success alert-dismissable" style="margin-top:20px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ success }}
+              </div>
             </div>
           </div>
         </div>
@@ -178,11 +188,13 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/signup.js"></script>
+        <script src="scripts/services/subscriber.js"></script>
         <!-- endbuild -->
         <script type="text/JavaScript">
-          $('.countdown').countdown('2014/06/17', function(event) {
+          $('.countdown').countdown('2014/06/27', function(event) {
            var $this = $(this).html(event.strftime(''
-             + '<div class="date">%H <span>Days</span></div>  '
+             + '<div class="date">%D <span>Days</span></div>  '
              + '<div class="date">%H <span>Hrs</span></div>  '
              + '<div class="date">%M <span>Min</span></div>  '
              + '<div class="date">%S <span>Sec</span></div> '));
