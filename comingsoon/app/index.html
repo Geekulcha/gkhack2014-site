@@ -8,7 +8,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="http://geekulcha.com/favicon.ico">
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -27,128 +29,128 @@
 
     <!-- Add your site or application content here -->
     <!-- <div class="" ng-view=""></div> -->
-<!-- Header Start -->
-<header>
-  <!-- Container -->
-  <div class="container">
-    <!-- Logo -->
+    <!-- Header Start -->
+    <header>
+      <!-- Container -->
+      <div class="container">
+        <!-- Logo -->
 
-    <!-- Countdown Block -->
-    <div class="countdown-block">
-      <h3><strong>We are On the way</strong></h3>
-      <!-- Countdown -->
-      <div class="countdown"></div>
-    </div>
-    <!-- Header Content -->
-    <div class="header-content">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <!-- About-Us -->
-          <div class="about-us">
-            <h2><strong>About</strong> GKHack</h2>
-            <p>GKHack is the annual Hackathon hosted by Geekulcha that aims to put together a massive brain activity of our geeks in one place to create cool things that matter! If you want to Learn and Build cool things or make some new friends GKHack is the right event for you. We belive that our geeks can use their skills to solve real problems  faced everyday, change people life and most important of all make AFRICA a better place.<br><p></p><p></p></p>
-            </p>
-            <!-- Social icons -->
-             <div class="social">
-                <a href="https://www.facebook.com/Geekulcha" class="facebook"> <i class="fa fa-facebook"></i> </a>
-                <a href="https://twitter.com/Geekulcha"class="twitter"> <i class="fa fa-twitter"></i> </a>
+        <!-- Countdown Block -->
+        <div class="countdown-block">
+          <h3><strong>We are On the way</strong></h3>
+          <!-- Countdown -->
+          <div class="countdown"></div>
+        </div>
+        <!-- Header Content -->
+        <div class="header-content">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <!-- About-Us -->
+              <div class="about-us">
+                <h2><strong>About</strong> GKHack</h2>
+                <p>GKHack is the annual Hackathon hosted by Geekulcha that aims to put together a massive brain activity of our geeks in one place to create cool things that matter! If you want to Learn and Build cool things or make some new friends GKHack is the right event for you. We belive that our geeks can use their skills to solve real problems  faced everyday, change people life and most important of all make AFRICA a better place.<br><p></p><p></p></p>
+                </p>
+                <!-- Social icons -->
+                 <div class="social">
+                    <a href="https://www.facebook.com/Geekulcha" class="facebook"> <i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/Geekulcha"class="twitter"> <i class="fa fa-twitter"></i> </a>
 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <!-- Subscriber Form -->
+              <div class="subscriber-form">
+                <h2><strong>Subscribe</strong> Now</h2>
+                <p>Subscribe now and get notified as soon as the GK14Hack registration process is open!</p>
+                <!-- Input Group -->
+                <div class="input-group" ng-controller="SignupCtrl">
+                  <form role="form" ng-submit="subscribe()" novalidate>
+                    <input type="text" class="form-control input-lg" placeholder="Name" ng-model="subscriber.name">
+                    <input type="text" class="form-control input-lg" placeholder="Email" ng-model="subscriber.email">
+                    <span class="input-group-btn">
+                      <input type="submit" value="Subscribe" class="btn btn-lg" />
+                      <!-- <button type="button" class="btn btn-lg">Subscribe</button> -->
+                    </span>
+                  </form>
+
+                  <div ng-show="error" class="alert alert-danger alert-dismissable" style="margin-top:20px;">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>Oups something went wrong!</strong> <br> {{ error }}
+                  </div>
+                  <div ng-show="success" class="alert alert-success alert-dismissable" style="margin-top:20px;">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    {{ success }}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6">
-          <!-- Subscriber Form -->
-          <div class="subscriber-form">
-            <h2><strong>Subscribe</strong> Now</h2>
-            <p>Subscribe now and get notified as soon as the GK14Hack registration process is open!</p>
-            <!-- Input Group -->
-            <div class="input-group" ng-controller="SignupCtrl">
-              <form role="form" ng-submit="subscribe()" novalidate>
-                <input type="text" class="form-control input-lg" placeholder="Name" ng-model="subscriber.name">
-                <input type="text" class="form-control input-lg" placeholder="Email" ng-model="subscriber.email">
-                <span class="input-group-btn">
-                  <input type="submit" value="Subscribe" class="btn btn-lg" />
-                  <!-- <button type="button" class="btn btn-lg">Subscribe</button> -->
-                </span>
-              </form>
+      </div>
+    </header>
+    <!-- Header end -->
 
-              <div ng-show="error" class="alert alert-danger alert-dismissable" style="margin-top:20px;">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Oups something went wrong!</strong> <br> {{ error }}
+    <!-- General -->
+
+    <!-- Service -->
+    <div class="service">
+      <!-- Container -->
+      <div class="container">
+        <h3><span class="bxr-red">Ready to Show Off Your SKills?</span></h3>
+        <h5>Our hacks are known for the different type of geeks we have under the same roof. You don't need to have programming skills to participate, there's always a team that will fit you with your other GeekSkills.</h5>
+        <!-- Service-Content -->
+        <div class="service-content text-center">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!-- Service Item -->
+              <div class="service-item">
+                <!-- Flat Icon -->
+                <a href="#"><img src="images/diod.png" alt="" class="images-responsive" /></a>
+                <!-- Heading -->
+                <h2><a href="#">Electronics</a></h2>
+                <!-- Paragraph -->
               </div>
-              <div ng-show="success" class="alert alert-success alert-dismissable" style="margin-top:20px;">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                {{ success }}
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!-- Service Item -->
+              <div class="service-item">
+                <a href="#"><img src="images/responsive.png" alt="" class="images-responsive" /></a>
+                <h2><a href="#">Web Developing</a></h2>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!-- Service Item -->
+              <div class="service-item">
+                <a href="#"><img src="images/mobile.png" alt="" class="images-responsive" /></a>
+                <h2><a href="#">Mobile Apps</a></h2>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!-- Service Item -->
+              <div class="service-item">
+                <a href="#"><img src="images/heart.png" alt="" class="images-responsive" /></a>
+                <h2><a href="#">UI/UX Designing</a></h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-<!-- Header end -->
 
-<!-- General -->
 
-<!-- Service -->
-<div class="service">
-  <!-- Container -->
-  <div class="container">
-    <h3><span class="bxr-red">Ready to Show Off Your SKills?</span></h3>
-    <h5>Our hacks are known for the diferent type of geeks we have under the same roof. You doesn't need to have programing skills to participate, there's always a team that will fit you with your other GeekSkills.</h5>
-    <!-- Service-Content -->
-    <div class="service-content text-center">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <!-- Service Item -->
-          <div class="service-item">
-            <!-- Flat Icon -->
-            <a href="#"><img src="images/diod.png" alt="" class="images-responsive" /></a>
-            <!-- Heading -->
-            <h2><a href="#">Electronics</a></h2>
-            <!-- Paragraph -->
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Service Item -->
-          <div class="service-item">
-            <a href="#"><img src="images/responsive.png" alt="" class="images-responsive" /></a>
-            <h2><a href="#">Web Developing</a></h2>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Service Item -->
-          <div class="service-item">
-            <a href="#"><img src="images/mobile.png" alt="" class="images-responsive" /></a>
-            <h2><a href="#">Mobile Apps</a></h2>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Service Item -->
-          <div class="service-item">
-            <a href="#"><img src="images/heart.png" alt="" class="images-responsive" /></a>
-            <h2><a href="#">UI/UX Designing</a></h2>
-          </div>
+
+    <!-- Footer Start-->
+    <footer>
+      <!-- Container -->
+      <div class="container">
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>&copy; Geekulcha 2014 <a href="http://www.geekulcha.com/">Geekulcha</a></p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Footer Start-->
-<footer>
-  <!-- Container -->
-  <div class="container">
-    <!-- Copyright -->
-    <div class="copyright">
-      <p>&copy; Geekulcha 2014 <a href="http://www.geekulcha.com/">Geekulcha</a></p>
-    </div>
-  </div>
-</footer>
-<!-- Footer End -->
+    </footer>
+    <!-- Footer End -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -157,7 +159,7 @@
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-45532196-1', 'hackathon.geekulcha.com');
        ga('send', 'pageview');
     </script>
 
