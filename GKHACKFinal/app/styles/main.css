@@ -95,6 +95,11 @@ a:focus {
     width: 100%;
 }
 
+
+.flexslider {
+  margin: 0 !important;
+}
+
 .block {
   padding-bottom: 4em !important;
   padding-top: 4em !important
@@ -504,7 +509,7 @@ button.disabled:hover,
 
 
 footer {
-	font: normal 13px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 13px/26px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
 	background: #000;
 }
@@ -542,6 +547,105 @@ footer ul#social li a:hover {
 	background: #e74c3c;
 }
 
+/*---------------------------------------------------
+  Countdown
+---------------------------------------------------*/
+
+.animated{
+	visibility: hidden;
+}
+.visible{
+	visibility: visible;
+}
+
+.countdown {
+	font-size:80px;
+	line-height:80px;
+	font-weight:100;
+	text-align:center;
+}
+.countdown #seconds{
+	position:relative;
+	top:-50px;
+	opacity:0;
+}
+.countdown #days-text,.countdown #hours-text,.countdown #minutes-text,.countdown #seconds-text{
+	font-size:15px;
+	line-height:15px;
+	font-weight:400;
+	padding-top:10px;
+}
+
+	/*---------------------------------------------------
+		3.2 Event
+
+		* Includes site logo and event details
+		* Date, Time, and Location of the event
+	---------------------------------------------------*/
+
+	#section-event {
+		color: #fff;
+		/* The background image used in this template is 1980 by 650 pixels */
+		background: #111 url('../images/bg_eventcamp.jpg') no-repeat center 0;
+	}
+
+		/* Site Title/Logo */
+		#section-event h1 {
+			color: #fff;
+			font: bold 95px/105px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			margin-top: 180px;
+			margin-bottom: 100px;
+		}
+
+		#section-event h1 a {
+			color: #fff;
+		}
+
+		#section-event h1 a:hover {
+			color: #77aa44;
+		}
+
+
+		/* Event information */
+		#section-info {
+			background-color: #353535;
+			padding: 30px 0;
+		}
+
+			#section-info h2 {
+				color: #fff;
+				font: bold 16px/28px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+			}
+
+			#section-info #box-date {
+				background: url('../images/icons/icon_date.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info #box-time {
+				background: url('../images/icons/icon_time.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info #box-location {
+				background: url('../images/icons/icon_map.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info h3 {
+				color: #fff;
+				font: bold 13px/23px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 4px;
+				letter-spacing: 2px;
+			}
+
+			#section-info p {
+				color: #fff;
+				font: normal 13px/23px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
 	/*---------------------------------------------------
 		3.8 Map
 	---------------------------------------------------*/
@@ -567,6 +671,7 @@ footer ul#social li a:hover {
 			height: 100%;
 			position: relative;
 		}
+
 
 /* Footer */
 /*
