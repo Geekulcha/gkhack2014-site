@@ -5,8 +5,7 @@ var app = angular.module('gkhackfinalApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'angular-flexslider'//,
-  // 'backstretch'
+  'angular-flexslider'
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {

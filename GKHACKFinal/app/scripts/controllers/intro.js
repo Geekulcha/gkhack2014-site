@@ -1,6 +1,5 @@
 'use strict';
 
-angular.module('gkhackfinalApp')
-  .controller('IntroController', function ($scope, $http) {
-      $scope.mySlides = ["images/slider/slider1.jpg", "images/slider/slider2.jpg"];
-  });
+app.controller('IntroController', function ($scope, $http) {
+  $scope.mySlides = ["images/slider/slider1.jpg", "images/slider/slider2.jpg"];
+});
