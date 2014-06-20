@@ -12,13 +12,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GKHack '14 .:: Make Life Easy ::.</title>
+    <title>GKHack '14 :: Make Life Easy</title>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(app) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -45,7 +45,7 @@
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+       ga('send', 'GKHack2014');
     </script>
 
     <!--[if lt IE 9]>
@@ -64,6 +64,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/flexslider/jquery.flexslider.js"></script>
     <script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -80,7 +81,9 @@
         <script src="scripts/services/user.js"></script>
         <script src="scripts/directives/mongooseError.js"></script>
         <!-- endbuild -->
+        <script type="text/JavaScript">
 
+        </script>
         <script>
           //jQuery to collapse the navbar on scroll
           $(window).scroll(function() {
@@ -102,96 +105,15 @@
             });
           });
 
-          (function($) {
-            /*
-             * COUNTDOWN
-             */
-
-            setInterval(function() {
-                var target = new Date("Jan 01 2015 21:15:00 GMT+0200"); //replace with YOUR DATE
-                //var target = new Date("Feb 17 2014 21:15:00 GMT-0600"); //replace with YOUR DATE
-                var now = new Date();
-                var difference = Math.floor((target.getTime() - now.getTime()) / 1000);
-
-                var seconds = fixIntegers(difference % 60);
-                difference = Math.floor(difference / 60);
-
-                var minutes = fixIntegers(difference % 60);
-                difference = Math.floor(difference / 60);
-
-                var hours = fixIntegers(difference % 24);
-                difference = Math.floor(difference / 24);
-
-                var days = difference;
-
-
-                $(".countdown #seconds").html(seconds);
-                $(".countdown #seconds").css({
-                    top: "-50px",
-                    opacity: 0
-                });
-                $(".countdown #seconds").animate({
-                    top: '0px',
-                    opacity: 1
-                }, 500);
-
-                $(".countdown #minutes").html(minutes);
-
-
-                $(".countdown #hours").html(hours);
-
-
-                $(".countdown #days").html(days);
-
-
-            }, 1000);
-
-
-
-            function fixIntegers(integer) {
-                if (integer < 0)
-                    integer = 0;
-                if (integer < 10)
-                    return "0" + integer;
-                return "" + integer;
-            }
-
-            $(window).load(function() {
-
-              /*
-               * PRELOADER
-               */
-
-              $('#preloader').fadeOut(800, function() {
-                  $('body').css('overflow', 'visible');
-
-                  //trigger css3 animations
-                  $('.animated').each(function() {
-                      var elem = $(this);
-                      var animation = elem.data('animation');
-                      if (!elem.hasClass('visible') && elem.attr('data-animation') !== undefined) {
-                          if (elem.attr('data-animation-delay') !== undefined) {
-                              var timeout = elem.data('animation-delay');
-                              setTimeout(function() {
-                                  elem.addClass(animation + " visible");
-                              }, timeout);
-                          } else {
-                              elem.addClass(elem.data('animation') + " visible");
-                          }
-                      }
-                  });
-              });
-            }); //window load
-
-          }(jQuery));
-          // $(document).ready(function() {
-          //   $("#intro-slider").owlCarousel({
-          //       navigation : true, // Show next and prev buttons
-          //       slideSpeed : 300,
-          //       paginationSpeed : 400,
-          //       singleItem:true
-          //     });
+          // $(function() {
+          //   $('.countdown').countdown('2014/06/27', function(event) {
+          //    var $this = $(this).html(event.strftime(''
+          //      + '<div class="date">%D <span>Days</span></div>  '
+          //      + '<div class="date">%H <span>Hrs</span></div>  '
+          //      + '<div class="date">%M <span>Min</span></div>  '
+          //      + '<div class="date">%S <span>Sec</span></div> '));
           //   });
+          // });
         </script>
 </body>
 </html>
