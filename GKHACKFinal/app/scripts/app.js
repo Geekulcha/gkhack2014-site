@@ -5,6 +5,7 @@ var app = angular.module('gkhackfinalApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'ngTwitter',
   'angular-flexslider'
 ]);
 
