@@ -116,6 +116,12 @@ a:focus {
 /*.gk-hack #sponsors h1 {
 color: #fff !important
 }*/
+.gk-hack .service {
+	margin-bottom: 30px;
+}
+.gk-hack .service h3 {
+	color: #999 !important
+}
 
 .justify {
 	text-align: justify;
@@ -928,14 +934,14 @@ footer ul#social li a:hover {
 
 /*From zapier*/
 .home-minimal,.home-minimal .banner,.home-minimal-html,.home-minimal-html body {
-    height: 100%;
-    min-height: 600px
+	height: 100%;
+	min-height: 600px
 }
 
 .home-minimal .banner {
-    background: #555 url(/images/slider/slide1.jpg) no-repeat;
-    background-position: 35% center;
-    background-size: cover
+	background: #555 url(/images/slider/slide1.jpg) no-repeat;
+	background-position: 35% center;
+	background-size: cover
 }
 
 .home-minimal .row {
@@ -943,210 +949,210 @@ footer ul#social li a:hover {
 }
 
 .home-minimal .banner .container {
-    padding: 0 20px
+	padding: 0 20px
 }
 
 .home-minimal .banner h1,.home-minimal .banner h2,.home-minimal .banner h3 {
-    color: #fff;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased
+	color: #fff;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased
 }
 
 .home-minimal .banner h1 {
-    margin: 0;
-    padding: 0;
-    -webkit-text-stroke-width: 0
+	margin: 0;
+	padding: 0;
+	-webkit-text-stroke-width: 0
 }
 
 .home-minimal .banner h1 img {
-    height: auto;
-    max-width: 130px
+	height: auto;
+	max-width: 130px
 }
 
 .home-minimal .banner h2 {
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-    line-height: 1.2em;
-    padding: 0 0 30px;
-    -webkit-text-stroke-width: 0
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: -1.5px;
+	line-height: 1.2em;
+	padding: 0 0 30px;
+	-webkit-text-stroke-width: 0
 }
 
 .home-minimal .banner h3 {
-    font-size: 25px;
-    font-style: italic;
-    letter-spacing: .3px;
-    line-height: 1.3em;
-    padding: 0 0 5px;
-    -webkit-text-stroke-width: .4px
+	font-size: 25px;
+	font-style: italic;
+	letter-spacing: .3px;
+	line-height: 1.3em;
+	padding: 0 0 5px;
+	-webkit-text-stroke-width: .4px
 }
 
 .home-minimal .banner hr {
-    background: #fff;
-    margin: 50px auto;
-    width: 50px
+	background: #fff;
+	margin: 50px auto;
+	width: 50px
 }
 
 .home-minimal .banner .signin {
-    color: #FFF;
-    font-weight: 300;
-    margin-top: 15px
+	color: #FFF;
+	font-weight: 300;
+	margin-top: 15px
 }
 
 .home-minimal .banner .signin em {
-    color: rgba(255,255,255,.8)
+	color: rgba(255,255,255,.8)
 }
 
 .home-minimal .banner .signin a {
-    color: #fff;
-    text-transform: uppercase
+	color: #fff;
+	text-transform: uppercase
 }
 
 .home-minimal .banner #home-sign-up {
-    margin-top: 10px
+	margin-top: 10px
 }
 
 .home-minimal .banner #home-sign-up-form {
-    max-width: 400px;
-    margin: 20px auto 0
+	max-width: 400px;
+	margin: 20px auto 0
 }
 
 .home-minimal .banner #home-sign-up-form .label {
-    display: none
+	display: none
 }
 
 .home-minimal .banner #home-sign-up-form input {
-    margin-bottom: 0
+	margin-bottom: 0
 }
 
 .home-minimal .banner #home-sign-up-form .field-terms,.home-minimal .banner #home-sign-up-form .field-updates,.home-minimal .banner #home-sign-up-form .signup-form-terms {
-    text-align: left;
-    color: #fff
+	text-align: left;
+	color: #fff
 }
 
 .home-minimal .banner #home-sign-up-form .field-terms a,.home-minimal .banner #home-sign-up-form .field-updates a,.home-minimal .banner #home-sign-up-form .signup-form-terms a {
-    color: #fff;
-    text-decoration: underline
+	color: #fff;
+	text-decoration: underline
 }
 
 .home-minimal .banner #home-sign-up-form .field-updates {
-    padding-top: 20px
+	padding-top: 20px
 }
 
 .home-minimal .banner #home-sign-up-form .signup-form-terms {
-    font-size: 13px;
-    margin: 5px 0 15px 22px
+	font-size: 13px;
+	margin: 5px 0 15px 22px
 }
 
 .home-minimal .banner #home-sign-up-form-errors {
-    color: #fff;
-    display: inline-block;
-    width: 100%;
-    margin: 10px 0;
-    text-align: left
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+	text-align: left
 }
 
 .home-minimal .banner #home-sign-up-form-errors .CodeMirror-lint-marker-error,.home-minimal .banner #home-sign-up-form-errors .CodeMirror-lint-marker-warning,.home-minimal .banner #home-sign-up-form-errors .fa {
-    padding-right: 7px
+	padding-right: 7px
 }
 
 .home-minimal .banner .btn-huge-pill {
-    border: none;
-    border-radius: 50px;
-    font-weight: 300;
-    padding: 6px 30px;
-    text-transform: uppercase
+	border: none;
+	border-radius: 50px;
+	font-weight: 300;
+	padding: 6px 30px;
+	text-transform: uppercase
 }
 
 .home-minimal .banner .btn-white {
-    background: #fff;
-    border: 1px solid transparent;
-    color: #FF4A00;
-    display: inline-block;
-    letter-spacing: 1px;
-    -webkit-text-stroke-width: .4px
+	background: #fff;
+	border: 1px solid transparent;
+	color: #FF4A00;
+	display: inline-block;
+	letter-spacing: 1px;
+	-webkit-text-stroke-width: .4px
 }
 
 .home-minimal .banner .btn-white:hover {
-    background: 0 0;
-    color: #fff;
-    border: 1px solid #fff;
-    text-decoration: none
+	background: 0 0;
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none
 }
 
 .home-minimal .banner .scroll-down {
-    cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    color: #FFF;
-    width: 100%;
-    left: 0;
-    right: 0;
-    text-align: center
+	cursor: pointer;
+	position: absolute;
+	bottom: 20px;
+	color: #FFF;
+	width: 100%;
+	left: 0;
+	right: 0;
+	text-align: center
 }
 
 .home-minimal .banner .scroll-down .text {
-    font-weight: 300;
-    font-size: 17px;
-    padding: 0 0 15px
+	font-weight: 300;
+	font-size: 17px;
+	padding: 0 0 15px
 }
 
 .home-minimal .banner .scroll-down .arrow {
-    background-image: url(/static/CpzTqZ/images/frontend/arrow-down.png);
-    background-size: 25px 11px;
-    display: inline-block;
-    height: 11px;
-    width: 25px
+	background-image: url(/static/CpzTqZ/images/frontend/arrow-down.png);
+	background-size: 25px 11px;
+	display: inline-block;
+	height: 11px;
+	width: 25px
 }
 
 @media (max-width:840px) {
-    .home-minimal,.home-minimal .banner,.home-minimal-html,.home-minimal-html body {
-        min-height: 525px
-    }
+	.home-minimal,.home-minimal .banner,.home-minimal-html,.home-minimal-html body {
+		min-height: 525px
+	}
 
-    .home-minimal .banner h1 img {
-        max-width: 135px
-    }
+	.home-minimal .banner h1 img {
+		max-width: 135px
+	}
 
-    .home-minimal .banner h2 {
-        font-size: 40px
-    }
+	.home-minimal .banner h2 {
+		font-size: 40px
+	}
 
-    .home-minimal .banner h3 {
-        font-size: 22px
-    }
+	.home-minimal .banner h3 {
+		font-size: 22px
+	}
 
-    .home-minimal .banner .scroll-down .text {
-        font-size: 16px;
-        letter-spacing: .5px
-    }
+	.home-minimal .banner .scroll-down .text {
+		font-size: 16px;
+		letter-spacing: .5px
+	}
 }
 
 @media (max-width:420px) {
-    .home-minimal,.home-minimal .banner,.home-minimal-html,.home-minimal-html body {
-        min-height: 460px
-    }
+	.home-minimal,.home-minimal .banner,.home-minimal-html,.home-minimal-html body {
+		min-height: 460px
+	}
 
-    .home-minimal .banner h1 img {
-        max-width: 115px
-    }
+	.home-minimal .banner h1 img {
+		max-width: 115px
+	}
 
-    .home-minimal .banner h2 {
-        font-size: 30px;
-        padding: 0 0 20px
-    }
+	.home-minimal .banner h2 {
+		font-size: 30px;
+		padding: 0 0 20px
+	}
 
-    .home-minimal .banner h3 {
-        font-size: 20px
-    }
+	.home-minimal .banner h3 {
+		font-size: 20px
+	}
 
-    .home-minimal .banner hr {
-        margin: 20px auto
-    }
+	.home-minimal .banner hr {
+		margin: 20px auto
+	}
 }
 
 @media (max-height:600px) {
-    .home-minimal .banner .scroll-down .text {
-        display: none
-    }
+	.home-minimal .banner .scroll-down .text {
+		display: none
+	}
 }
