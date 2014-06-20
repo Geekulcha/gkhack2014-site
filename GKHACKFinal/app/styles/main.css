@@ -113,9 +113,9 @@ a:focus {
 .gk-hack .dropcap::first-letter {
   color: #e74c3c !important
 }
-.gk-hack #sponsors h1 {
+/*.gk-hack #sponsors h1 {
   color: #fff !important
-}
+}*/
 
 .justify {
   text-align: justify;
@@ -166,16 +166,16 @@ a:focus {
 }
 
 #sponsors {
-  background: #353535; /*url("../img/api-partners.png") no-repeat center center*/
-  color: #fff;
+  background: #fff; /*url("../img/api-partners.png") no-repeat center center*/
+  /*color: #fff;*/
   -moz-box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.2)
 }
 
-#sponsors h1 {
+/*#sponsors h1 {
   color: #fff
-}
+}*/
 
 #contact {
   background: #161616; /*url("../img/api-partners.png") no-repeat center center*/
