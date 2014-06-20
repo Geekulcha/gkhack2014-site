@@ -201,14 +201,14 @@ color: #fff
 }
 
 .btn-theme {
-	color: #d2d2dc;
+	color: #e74c3c;
 	background-color: transparent;
 	border-width: 2px;
-	border-color: #d2d2dc;
+	border-color: #e74c3c;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 700;
-	padding: 20px 40px;
+	padding: 10px 40px;
 
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
@@ -220,8 +220,8 @@ color: #fff
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
 	color: #ffffff;
-	background-color: #d2d2dc;
-	border-color: #d2d2dc;
+	background-color: #e74c3c;
+	border-color: #e74c3c;
 }
 
 .btn-theme:active,
@@ -246,19 +246,19 @@ fieldset[disabled] .btn-theme:active,
 .btn-theme[disabled].active,
 fieldset[disabled] .btn-theme.active {
 	background-color: transparent;
-	border-color: #d2d2dc;
-	color: #d2d2dc;
+	border-color: #e74c3c;
+	color: #e74c3c;
 }
 
 .btn-theme .badge {
-	color: #d2d2dc;
+	color: #e74c3c;
 	background-color: transparent;
 }
 
 .btn-theme-primary {
 	color: #ffffff;
-	background-color: #1e90ff;
-	border-color: #1e90ff;
+	background-color: #e74c3c;
+	border-color: #e74c3c;
 }
 
 .btn-theme-primary:focus,
@@ -276,7 +276,7 @@ fieldset[disabled] .btn-theme.active {
 
 .btn-theme-white:hover {
 	color: #ffffff;
-	background-color: #1e90ff;
+	background-color: #e74c3c;
 	border-color: #ffffff;
 }
 
@@ -288,8 +288,8 @@ fieldset[disabled] .btn-theme.active {
 
 .btn-theme-default {
 	color: #ffffff;
-	background-color: #d2d2dc;
-	border-color: #d2d2dc;
+	background-color: #e74c3c;
+	border-color: #e74c3c;
 }
 
 .btn-theme-default:hover {
@@ -1155,4 +1155,58 @@ footer ul#social li a:hover {
 	.home-minimal .banner .scroll-down .text {
 		display: none
 	}
+}
+
+.page-section.twitter,
+.page-section.twitter > .container {
+    background: url("/images/twitter_bg.jpg") #f6f7f8 50% 0 repeat;
+}
+
+@media (max-width: 991px) {
+    .wide .page-section.twitter,
+    .boxed .page-section.twitter > .container {
+        background-position: 50% 0 !important;
+    }
+}
+
+/* Last tweet
+/* ========================================================================== */
+
+.last-tweet {
+    overflow: hidden;
+    padding: 0 0 30px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.last-tweet .twitter-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.last-tweet .twitter-icon .fa {
+    font-size: 50px;
+    line-height: 50px;
+    color: #e74c3c;
+}
+
+.last-tweet a {
+    color: #e74c3c;
+}
+
+.last-tweet a:hover {
+    color: #000000;
+}
+
+.last-tweet p {
+    margin-bottom: 0;
+}
+
+.last-tweet p + p {
+    margin-top: 10px;
 }

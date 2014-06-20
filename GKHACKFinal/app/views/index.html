@@ -3,139 +3,140 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <base href="/">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>GKHack '14 :: Make Life Easy</title>
+  <title>GKHack '14 :: Make Life Easy</title>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(app) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
-    <!-- endbower -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(app) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+  <!-- endbower -->
 
-    <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
-    <!-- <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" /> -->
+  <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
+  <!-- <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" /> -->
 
-    <!-- npm:css -->
-    <link rel="stylesheet" href="scripts/vendor/ngTwitter/ng-twitter.min.css" />
-    <!-- endnpm -->
+  <!-- npm:css -->
+  <link rel="stylesheet" href="scripts/vendor/ngTwitter/ng-twitter.min.css" />
+  <!-- endnpm -->
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/animate.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body id="page-top" data-spy="scroll" class="gk-hack" data-target=".navbar-custom" ng-app="gkhackfinalApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body id="page-top" data-spy="scroll" class="gk-hack" data-target=".navbar-custom" ng-app="gkhackfinalApp">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="" ng-view=""></div>
+  <!-- Add your site or application content here -->
+  <div class="" ng-view=""></div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'GKHack2014');
-    </script>
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'GKHack2014');
+  </script>
 
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
 
-    <!-- build:js(app) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jQuery/dist/jquery.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/jquery-backstretch/jquery.backstretch.js"></script>
-    <script src="bower_components/jquery.slimscroll/jquery.slimscroll.js"></script>
-    <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-    <!-- endbower -->
-    <script src="bower_components/flexslider/jquery.flexslider.js"></script>
-    <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+  <!-- build:js(app) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jQuery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/jquery-backstretch/jquery.backstretch.js"></script>
+  <script src="bower_components/jquery.slimscroll/jquery.slimscroll.js"></script>
+  <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+  <!-- endbower -->
+  <script src="bower_components/flexslider/jquery.flexslider.js"></script>
+  <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
 
-    <!-- npm -->
-    <script src="scripts/vendor/ngTwitter/ng-twitter.min.js"></script>
-    <!-- // <script src="scripts/vendor/angular-backstrech/angular-backstretch.js"></script> -->
+  <!-- npm -->
+  <script src="scripts/vendor/ngTwitter/ng-twitter.min.js"></script>
+  <!-- // <script src="scripts/vendor/angular-backstrech/angular-backstretch.js"></script> -->
 
-    <!-- endnpm -->
+  <!-- endnpm -->
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/navbar.js"></script>
-        <script src="scripts/controllers/login.js"></script>
-        <script src="scripts/controllers/signup.js"></script>
-        <script src="scripts/controllers/settings.js"></script>
-        <script src="scripts/controllers/intro.js"></script>
-        <script src="scripts/controllers/twitter.js"></script>
-        <script src="scripts/controllers/register.js"></script>
-        <script src="scripts/services/auth.js"></script>
-        <script src="scripts/services/session.js"></script>
-        <script src="scripts/services/user.js"></script>
-        <script src="scripts/services/hacker.js"></script>
-        <script src="scripts/directives/backstretch.js"></script>
-        <!-- // <script src="scripts/directives/fullpage.js"></script> -->
-        <script src="scripts/directives/mongooseError.js"></script>
-        <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/navbar.js"></script>
+  <script src="scripts/controllers/login.js"></script>
+  <script src="scripts/controllers/signup.js"></script>
+  <script src="scripts/controllers/settings.js"></script>
+  <script src="scripts/controllers/intro.js"></script>
+  <script src="scripts/controllers/twitter.js"></script>
+  <script src="scripts/controllers/register.js"></script>
+  <script src="scripts/services/auth.js"></script>
+  <script src="scripts/services/session.js"></script>
+  <script src="scripts/services/user.js"></script>
+  <script src="scripts/services/hacker.js"></script>
+  <script src="scripts/directives/backstretch.js"></script>
+  <!-- // <script src="scripts/directives/fullpage.js"></script> -->
+  <script src="scripts/directives/mongooseError.js"></script>
+  <!-- endbuild -->
 
-        <script>
-          //jQuery to collapse the navbar on scroll
-          $(window).scroll(function() {
-            if ($(".navbar").offset().top > 50) {
-              $(".navbar-fixed-top").addClass("top-nav-collapse");
-            } else {
-              $(".navbar-fixed-top").removeClass("top-nav-collapse");
-            }
-          });
+  <script>
+  //jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+      $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+      $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+  });
 
-          //jQuery for page scrolling feature - requires jQuery Easing plugin
-          $(function() {
-            $('.page-scroll a').bind('click', function(event) {
-              var $anchor = $(this);
-              $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-              }, 1500, 'easeInOutExpo');
-              event.preventDefault();
-            });
-          });
-
-          // $(function() {
-          //   $('.countdown').countdown('2014/06/27', function(event) {
-          //    var $this = $(this).html(event.strftime(''
-          //      + '<div class="date">%D <span>Days</span></div>  '
-          //      + '<div class="date">%H <span>Hrs</span></div>  '
-          //      + '<div class="date">%M <span>Min</span></div>  '
-          //      + '<div class="date">%S <span>Sec</span></div> '));
-          //   });
-          // });
-        </script>
+  //jQuery for page scrolling feature - requires jQuery Easing plugin
+  $(function() {
+    $('.page-scroll a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
+  });
+  </script>
+  <script>
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src="http://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,"script","twitter-wjs");
+  </script>
 </body>
 </html>
