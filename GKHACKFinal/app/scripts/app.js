@@ -6,6 +6,8 @@ var app = angular.module('gkhackfinalApp', [
   'ngSanitize',
   'ngRoute',
   'ngTwitter',
+  'ui.bootstrap',
+  // 'backstretch',
   'angular-flexslider'
 ]);
 
@@ -27,6 +29,10 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
         templateUrl: 'partials/settings',
         controller: 'SettingsCtrl',
         authenticate: true
+      })
+      .when('/register', {
+        templateUrl: 'partials/register',
+        controller: 'RegistrationController',
       })
       .otherwise({
         redirectTo: '/'
