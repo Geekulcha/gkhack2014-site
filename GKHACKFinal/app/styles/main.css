@@ -877,7 +877,16 @@ color: #fff !important
 		border-bottom: none;
 	}
 
-	#timeline table thead td:first-child {
+	#timeline a {
+		color: #555;
+	}
+
+	#timeline a:hover {
+		color: #e74c3c;
+	}
+
+	#timeline table thead td:first-child,
+	#timeline table thead td:nth-child(3) {
 		background: #222;
 		border-top: 2px solid #333;
 		border-left: 1px solid #111;
@@ -888,7 +897,8 @@ color: #fff !important
 		border-top: 2px solid #222;
 	}
 
-	#timeline table tbody td:first-child {
+	#timeline table tbody td:first-child,
+	#timeline table tbody td:nth-child(3) {
 		border-left: 1px solid #eee;
 	}
 
@@ -901,11 +911,13 @@ color: #fff !important
 		background: #f8f8f8;
 	}
 
-	#timeline table tbody td:first-child {
+	#timeline table tbody td:first-child,
+	#timeline table tbody td:nth-child(3) {
 		color: #555;
 	}
 
-	#timeline table tbody tr:nth-child(even) td:first-child {
+	#timeline table tbody tr:nth-child(even) td:first-child,
+	#timeline table tbody tr:nth-child(even) td:nth-child(3) {
 		color: #333;
 	}
 
@@ -917,7 +929,7 @@ color: #fff !important
 	}
 
 	#timeline table td {
-		padding: 20px;
+		padding: 15px;
 	}
 
 	#timeline table tfoot td {
