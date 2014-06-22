@@ -5,11 +5,11 @@ var app = angular.module('gkhackfinalApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  // 'ngTwitter',
-  'ui.bootstrap'
-  // 'backstretch',
-  // 'angular-flexslider'
-]);
+  'linkify',
+  'ui.bootstrap',
+  'firebase'
+])
+.constant('FIREBASE_URL', 'https://blinding-fire-5281.firebaseio.com/');
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
@@ -17,19 +17,19 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
-      .when('/login', {
-        templateUrl: 'partials/login',
-        controller: 'LoginCtrl'
-      })
-      .when('/signup', {
-        templateUrl: 'partials/signup',
-        controller: 'SignupCtrl'
-      })
-      .when('/settings', {
-        templateUrl: 'partials/settings',
-        controller: 'SettingsCtrl',
-        authenticate: true
-      })
+      // .when('/login', {
+      //   templateUrl: 'partials/login',
+      //   controller: 'LoginCtrl'
+      // })
+      // .when('/signup', {
+      //   templateUrl: 'partials/signup',
+      //   controller: 'SignupCtrl'
+      // })
+      // .when('/settings', {
+      //   templateUrl: 'partials/settings',
+      //   controller: 'SettingsCtrl',
+      //   authenticate: true
+      // })
       .when('/register', {
         templateUrl: 'partials/register',
         controller: 'RegistrationController',
