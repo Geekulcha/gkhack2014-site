@@ -21,11 +21,7 @@
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
   <!-- endbower -->
 
-  <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
-  <!-- <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" /> -->
-
   <!-- npm:css -->
-  <link rel="stylesheet" href="scripts/vendor/ngTwitter/ng-twitter.min.css" />
   <!-- endnpm -->
 
   <!-- endbuild -->
@@ -36,7 +32,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body id="page-top" data-spy="scroll" class="gk-hack" data-target=".navbar-custom" ng-app="gkhackfinalApp">
+<body data-spy="scroll" class="gk-hack" data-target=".navbar-custom" ng-app="gkhackfinalApp">
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -70,20 +66,11 @@
   <script src="bower_components/angular-cookies/angular-cookies.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-  <script src="bower_components/jquery-backstretch/jquery.backstretch.js"></script>
   <script src="bower_components/jquery.slimscroll/jquery.slimscroll.js"></script>
-  <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-  <script src="bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
   <!-- endbower -->
-  <script src="bower_components/flexslider/jquery.flexslider.js"></script>
-  <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
 
   <!-- npm -->
-  <script src="scripts/vendor/ngTwitter/ng-twitter.min.js"></script>
-  <!-- // <script src="scripts/vendor/angular-backstrech/angular-backstretch.js"></script> -->
-
   <!-- endnpm -->
 
   <!-- endbuild -->
@@ -96,14 +83,10 @@
   <script src="scripts/controllers/signup.js"></script>
   <script src="scripts/controllers/settings.js"></script>
   <script src="scripts/controllers/intro.js"></script>
-  <script src="scripts/controllers/twitter.js"></script>
-  <script src="scripts/controllers/register.js"></script>
   <script src="scripts/services/auth.js"></script>
   <script src="scripts/services/session.js"></script>
   <script src="scripts/services/user.js"></script>
-  <script src="scripts/services/hacker.js"></script>
-  <script src="scripts/directives/backstretch.js"></script>
-  <!-- // <script src="scripts/directives/fullpage.js"></script> -->
+  <script src="scripts/directives/scrollonclick.js"></script>
   <script src="scripts/directives/mongooseError.js"></script>
   <!-- endbuild -->
 
@@ -112,7 +95,9 @@
   $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
       $(".navbar-fixed-top").addClass("top-nav-collapse");
+      $(".navbar-fixed-top").removeClass("top-nav-customize");
     } else {
+      $(".navbar-fixed-top").addClass("top-nav-customize");
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
   });

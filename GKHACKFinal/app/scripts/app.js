@@ -5,10 +5,10 @@ var app = angular.module('gkhackfinalApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngTwitter',
-  'ui.bootstrap',
+  // 'ngTwitter',
+  'ui.bootstrap'
   // 'backstretch',
-  'angular-flexslider'
+  // 'angular-flexslider'
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {

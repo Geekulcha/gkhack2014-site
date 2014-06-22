@@ -7,6 +7,14 @@ textarea {
 	resize: none;
 }
 
+.top-nav-customize a.navbar-brand img{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.top-nav-customize li.page-scroll a{
+	color: #fff;
+}
+
 p{
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 500 !important;
@@ -977,7 +985,7 @@ color: #fff !important
 	}
 
 	.home-minimal .banner {
-		background: #555 url(/images/slider/slide1.jpg) no-repeat;
+		background: #555 url(/images/slider/slide.jpg) no-repeat;
 		background-position: 35% center;
 		background-size: cover
 	}
