@@ -1,23 +1,24 @@
 'use strict';
 
-app.controller('RegistrationController', function ($scope, Hacker, $location) {
+app.controller('RegistrationController', function($scope, $location) {
   $scope.user = {};
   $scope.errors = {};
 
   $scope.register = function(form) {
     $scope.submitted = true;
-
-    if(form.$valid) {
+    
+    if (form.$valid) {
       Hacker.createHacker({
         name: $scope.user.name,
         email: $scope.user.email,
         password: $scope.user.password
       })
-      .then( function() {
+      .then(function() {
         // Account created, redirect to home
         $location.path('/');
       })
-      .catch( function(err) {
+      .
+      catch (function(err) {
         err = err.data;
         $scope.errors = {};
 

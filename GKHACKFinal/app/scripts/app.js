@@ -32,7 +32,7 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
       // })
       .when('/register', {
         templateUrl: 'partials/register',
-        controller: 'RegistrationController',
+        controller: 'TwitterController',
       })
       .otherwise({
         redirectTo: '/'
