@@ -7,11 +7,13 @@ var app = angular.module('gkhackfinalApp', [
   'ngRoute',
   'linkify',
   'ui.bootstrap',
-  'firebase'
+  'firebase',
+  // 'ngAnimate',
+  'angular-google-analytics'
 ])
 .constant('FIREBASE_URL', 'https://blinding-fire-5281.firebaseio.com/');
 
-app.config(function ($routeProvider, $locationProvider, $httpProvider) {
+app.config(function ($routeProvider, $locationProvider, $httpProvider, AnalyticsProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
@@ -39,6 +41,24 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
       });
 
     $locationProvider.html5Mode(true);
+
+    AnalyticsProvider.setAccount('UA-52169473-1');
+    AnalyticsProvider.trackPages(true);
+    AnalyticsProvider.setDomainName('none');
+    AnalyticsProvider.trackPrefix('GKHack14');
+    AnalyticsProvider.useAnalytics(true);
+    AnalyticsProvider.ignoreFirstPageLoad(true);
+    AnalyticsProvider.useECommerce(true);
+    AnalyticsProvider.useEnhancedLinkAttribution(true);
+    AnalyticsProvider.setExperimentId('12345');
+    AnalyticsProvider.setCookieConfig({
+      cookieDomain: 'hackathon.geekulcha.com',
+      cookieName: 'gkhack14',
+      cookieExpires: 20000
+    });
+
+    // change page event name
+    AnalyticsProvider.setPageEvent('$stateChangeSuccess');
 
     // Intercept 401s and redirect you to login
     $httpProvider.interceptors.push(['$q', '$location', function($q, $location) {

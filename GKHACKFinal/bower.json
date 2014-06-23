@@ -20,7 +20,9 @@
     "angular-bootstrap": "~0.11.0",
     "jquery.countdown": "~2.0.4",
     "angular-linkify": "~0.3.3",
-    "angularfire": "~0.7.1"
+    "angularfire": "~0.7.1",
+    "angular-google-analytics": "~0.0.3",
+    "jquery-easing": "*"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
