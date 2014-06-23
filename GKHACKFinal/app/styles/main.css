@@ -18,7 +18,7 @@ textarea {
 p{
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 500 !important;
-	font-size: 1.5em !important;
+	font-size: 1.3em !important;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -998,7 +998,8 @@ color: #fff !important
 
 	.home-minimal .banner {
 		background: #555 url(/images/slider/slide.jpg) no-repeat;
-		background-position: 35% center;
+		/*background-position: 35% center;*/
+		background-position: 35% 25%;
 		background-size: cover
 	}
 
